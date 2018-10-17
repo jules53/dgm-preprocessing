@@ -1,0 +1,45 @@
+header {
+	background-color: @primaryColor;
+    margin: 0 0 0 0;
+    height: 125px;
+	display: flex;
+	justify-content: center;
+
+	h1 {
+      font-size: 2.6rem;
+      font-weight: @boldWeight;
+      color: @secondaryColor;
+      margin: 0 @gutter;
+      .center;
+    }
+   
+   .nav-container {
+    .center;
+    width: 800px;
+    
+
+      nav {
+      .center;
+
+     ul li {
+      justify-content: center;
+      float: left;
+      list-style: none;
+      
+        a {
+          font-weight: @normalWeight;
+          color: darken(@secondaryColor, 30%);
+          font-size: 1.5rem;
+          margin-left: 20px;
+        }
+     
+      }
+    }
+  }
+  
+    .mainContainer{
+        max-width: 990px;
+        margin: 0 auto;
+    }
+
+}

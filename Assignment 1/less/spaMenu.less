@@ -1,0 +1,107 @@
+@import "reset.less";
+@import "variables.less";
+@import "general-styles.less";
+@import "mixins.less";
+
+@phone: (max-width: 560px);
+@media @phone {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Overall styling for the BODY of the document */
+
+body{
+  font-family: @defaultFont;
+  font-weight: @normalWeight;
+  font-size: 16px;
+
+
+  
+
+main {
+
+  h1 {
+  .center;
+  color: @secondaryColor;
+  font-weight: @normalWeight;
+  margin: 0 0  20px @gutter;
+  font-size: 2.5rem;   
+  }
+
+      /**** SPA MENU ****/
+.container {
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+
+  
+  @media @phone {
+      flex-wrap: wrap;
+  }
+  
+  .left-content {
+    max-width: 28%;
+    flex-direction: column;
+   
+      
+      h2 {
+            color: @secondaryColor;
+            font-weight: @normalWeight;
+            font-size: 2rem;
+            padding: 5px;
+            margin: 15px 0 15px 0;
+      }
+      ul li {
+            font-weight: @normalWeight;
+            list-style: none;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+          
+              a {
+                color: darken(@secondaryColor, 20%);
+              }
+          }
+    
+        @media @phone {
+          width: 100%;
+        }
+  }
+  
+  .center-content {
+    width: 72%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    @media @phone {
+      width: 100%;
+    }
+      figure.mainImage img{
+          width: 100%;
+          flex-wrap: nowrap;
+          
+      }
+
+      .thumb img{
+          width: 72%;
+          flex-wrap: nowrap;
+          margin-left: 30px;
+      }
+
+
+  }
+  
+}
+     
+
+  }//end main
+
+}
+    
